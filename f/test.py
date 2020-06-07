@@ -28,12 +28,26 @@ def subprocess_interactions(target, arr):
             elif result == 0:
                 pass #print ('0:', target, 'Nums', el, 'and', target - el, 'are not in the', arr)
             return
+        else:
+            print(child_output)
 
 
 if __name__ == "__main__":
     for i in range(0, 10000):
         target = randint(1, 100)
         arr = []
-        for i in range(0, randint(5,100)):
+        for i in range(0, randint(10,50)):
             arr.append(randint(1, 100))
         subprocess_interactions(target, arr)
+
+    #print('Beginning the second test.')
+    #for i in range(0, 10000):
+    #    target = randint(2, 100)
+    #    arr = []
+    #    num1 = target - randint(1,target - 1)
+    #    num2 = target - num1
+    #    arr.append(num1)
+    #    arr.append(num2)
+    #    for i in range(0, randint(10,50)):
+    #        arr.append(randint(1, 100))
+    #    subprocess_interactions(target, arr)

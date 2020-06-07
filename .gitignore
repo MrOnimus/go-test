@@ -1,2 +1,4 @@
 # Custom
 *.out
+output.txt
+__pycache__
